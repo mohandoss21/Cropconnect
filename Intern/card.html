@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crop Connect</title>    
+  </head>
+  <body>
+    <button onclick="
+      console.log(`Cart quantity: ${cartq}`);
+      ">
+      Show Quantity
+    </button>
+    <button onclick="
+      cartq++;
+      console.log(`Cart quantity: ${cartq}`);
+    ">
+      Add to Cart
+    </button>
+    <button
+    onclick="
+      cartq+=2;
+      console.log(`Cart quantity: ${cartq}`);
+    "
+    >+2</button>
+    <button
+    onclick="
+      cartq+=3;
+      console.log(`Cart quantity: ${cartq}`);
+    ">+3</button>
+    <button
+    onclick="
+      cartq=0;
+      console.log(`Cart quantity: ${cartq}`);
+    ">Reset Cart</button>
+    <script>
+        let cartq=0;
+
+    </script>
+  </body>
+</html>
