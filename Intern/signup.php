@@ -5,17 +5,16 @@
 <link rel="stylesheet" href="log.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<?php
+  <body>
+  <?php
   include('header.html');
   ?>
 
-  <body>
-  
   <div class="wrapper">
-  <form action="dblogin.php" method="post">
-    <h1>Login</h1>
+  <form action="signup.jsp" method="post">
+    <h1>Sign Up</h1>
     <div class="name">
-        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="name" placeholder="Username">
         <i class='bx bxs-user'></i>
     </div>
     <div class="email">
@@ -26,13 +25,14 @@
         <input type="password" name="password" placeholder="Password">
         <i class='bx bxs-lock-alt'></i>
     </div>
-    <button type="submit" class="btn">Login</button>
-    <div class="register-link">
-        <p>Don'have an account? <a href="signup.php">Register</a></p>
-
+    <div class="password">
+        <input type="password" name="Confirmpassword" placeholder="Confirm Password">
+        <i class='bx bxs-lock-alt'></i>
     </div>
+    <button type="submit" class="btn">Submit</button>
   </form>
 </div>
+ 
   <?php
   include('footer.html');
   ?>

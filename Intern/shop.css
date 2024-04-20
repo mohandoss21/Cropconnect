@@ -68,7 +68,14 @@ nav ul li a:hover{
 }
 
 
-
+button{
+  color: black;
+  background-color: white;
+}
+button:hover{
+  color: white;
+  background-color: black;
+}
 .insta{
   width: 25px;
   height: 25px;

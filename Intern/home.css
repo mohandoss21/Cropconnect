@@ -2,86 +2,67 @@ body {
     margin: 0;
     padding-bottom: 0px;
     padding-left: 0px;
-    font-family: 'Arial', sans-serif;
+    -webkit-font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-.main-header {
-    background-color:white;
-    height: 60px;
-    background-size: cover;
-    padding-bottom: 0px;
-    background-position: center;
-    color: #740707; 
-    padding-bottom: 0; 
-}
 
-.header-container {
-    display: flex;
-    flex-direction: start;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    position: fixed;
-    margin: auto;
-    border-width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    border-radius: 2px;
-}
-.header-container:hover{
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.205);
-}
-.logo {
-    max-height: 50px; 
-    max-width: 200px;
-    flex: 1;
-    margin-left: 15px;
-}
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-    cursor: pointer;}
-
-nav ul li a {
-    text-decoration: none;
-    color: burlywood ;
-    font-weight: bold;
-}
-nav ul li a:hover{
-    text-decoration: underline;
-}
 .center{
     width: 100%;
     height: 400px;
     margin-top: 0px;
 }
-
+:root{
+    --primary: rgb(238,174,202);
+    --heading-color:#282938;
+    --bg-shade:#f5fcff;
+    --github:#e62872;
+    --darkblue: #1c1e53;
+    --black:#000000;
+    --white:#ffffff;
+    --nav:#6a11cb;
+  }
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: white;
+}
 .shop-button{
-    height: 50px;
-    width: 90px;
-  
-    color: black;
-    background-color: bisque;
-    border-radius: 20px;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        padding: 14px 32px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
+        transition: background-color 0.5s;
+        -webkit-transition:  background-color 0.5s;
+        -moz-transition:  background-color 0.5s;
+        -ms-transition:  background-color 0.5s;
+        -o-transition:  background-color 0.5s;
+}
+.shop-button{
+        color:var(--primary);
+        background-color:var(--white);
+        border: 1px solid var(--primary);
 }
 .shop-button:hover{
-      cursor: pointer;
-      box-shadow: 10px 10px 10px rgb(180, 174, 174);
-}
-.shop-button a{
-    text-decoration: none;
-    color: black;
-}
+        color:var(--white);
+        background-color:var(--primary);
+      }
 .text{
 
     display: grid;
@@ -102,83 +83,3 @@ h2{
     margin-left: 20px;
 }
 
-.insta{
-    width: 25px;
-    height: 25px;
-
-}
-.fb{
-    width: 25px;
-    height: 25px;
-}
-.wp{
-    width: 25px;
-    height: 25px;
-}
-.li{
-    width: 25px;
-    height: 25px;
-}
-.bottom{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    background-color: lightgreen;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-bottom: 40px;
-}
-.bottom:hover{
-    transition: green 1s;
-}
-.list1{
-    text-decoration: none;
-    margin-top: 20px;
-
-}
-.list2{
-    display: flex;
-    align-items: center;
-}
-.i{
-    flex: 1; 
-    margin: 0 10px;
-    text-align: center; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-}
-.l{
-    flex: 1; 
-    margin: 0 10px;
-    text-align: center; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-}
-.w{
-    flex: 1; 
-    margin: 0 10px;
-    text-align: center; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-}
-.f{
-    flex: 1; 
-    margin: 0 10px;
-    text-align: center; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-}
-.app-head{
-    flex: 1;
-    background-color: rgba(152, 139, 126, 0.137);
-  
-    height: 160px;
-    margin-bottom: 0px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.search-bar{
-    width: 140px;
-}

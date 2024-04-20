@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    <link rel="stylesheet" href="home.css">
+    <?php
+  include('header.html');
+  ?>
+</head>
+
   <body>
-
-<?php
-include('header.html')
-?>
-
+   
 <div class="main">
         <div class="big">
             <img class="center" src="img\\ISARIA_CONNECT-scaled-2.webp">
@@ -30,8 +33,9 @@ include('header.html')
                 <p style="margin-left: 20px;">With your mobile and devices you can check and buy at anytine anywhere</p>
                 
             </div>
-<?php
-include('footer.html')
-?>
+            <?php
+  include('footer.html');
+  ?>
+
 </body>
 </html>

@@ -1,140 +1,19 @@
 body{
   background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url('img\\459-background.png'); 
   background-size: cover; 
+  background-color: black;
   background-position: center;
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-repeat: repeat;
   margin: 0;
   padding: 0;
 
   display: flex;
   flex-direction: column;
 }
-.main-header {
-  background-color:white;
-  height: 60px;
-  background-size: cover;
-  padding-bottom: 0px;
-  background-position: center;
-  color: #740707; 
-  padding-bottom: 0; 
-}
 
-.header-container {
-  display: flex;
-  flex-direction: start;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  position: fixed;
-  margin: auto;
-  border-width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  border-radius: 2px;
-}
-.header-container:hover{
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.205);
-}
-.logo {
-  max-height: 50px; 
-  max-width: 200px;
-  flex: 1;
-  margin-left: 15px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-  cursor: pointer;}
-
-nav ul li a {
-  text-decoration: none;
-  color: burlywood 
-  font-weight: bold;
-}
-nav ul li a:hover{
-  text-decoration: underline;
-}
-
-
-
-.insta{
-  width: 25px;
-  height: 25px;
-
-}
-.fb{
-  width: 25px;
-  height: 25px;
-}
-.wp{
-  width: 25px;
-  height: 25px;
-}
-.li{
-  width: 25px;
-  height: 25px;
-}
-.bottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1; /* Grow to fill available space */
-  padding: 20px;
-  background-color: lightgreen;
-}
-.bottom:hover{
-  transition: green 1s;
-}
-.list1{
-  text-decoration: none;
-  margin-top: 20px;
-
-}
-.list2{
-  display: flex;
-  fl
-  align-items: center;
-}
-.i{
-  flex: 1; 
-  margin: 0 10px;
-  text-align: center; 
-  padding: 10px; 
-  border: 1px solid #ccc;
-}
-.l{
-  flex: 1; 
-  margin: 0 10px;
-  text-align: center; 
-  padding: 10px; 
-  border: 1px solid #ccc;
-}
-.w{
-  flex: 1; 
-  margin: 0 10px;
-  text-align: center; 
-  padding: 10px; 
-  border: 1px solid #ccc;
-}
-.f{
-  flex: 1; 
-  margin: 0 10px;
-  text-align: center; 
-  padding: 10px; 
-  border: 1px solid #ccc;
-}
 .wrapper{
   display: flex;
   justify-content: center;
@@ -153,31 +32,53 @@ nav ul li a:hover{
   font-size: 36px;
   text-align: center;
 }
-.wrapper .name{
-  width: 100%;
-  height: 20px;
-  margin: 30px 0;
-}
-.wrapper .email{
-  width: 100%;
-  height: 20px;
-  margin: 30px 0;
-}
-.wrapper .password{
-  width: 100%;
-  height: 20px;
+.wrapper input{
+  width: 200px;
+  height: 40px;
   margin: 30px 0;
 }
 .wrapper .remember-forgot{
-  width: 100%;
+  width: 180px;
   height: 20px;
   margin: 30px 0;
 }
-.wrapper .btn{
-  width: 100px;
-  height: 40px;
-  margin: 30px 0;
-  background-color: bisque;
-  border-radius: 20px;
-  margin-left: 50px;
+:root{
+  --primary: rgb(238,174,202);
+  --heading-color:#282938;
+  --bg-shade:#f5fcff;
+  --github:#e62872;
+  --darkblue: #1c1e53;
+  --black:#000000;
+  --white:#ffffff;
+  --nav:#6a11cb;
 }
+.wrapper .btn{
+      display: inline-block;
+      height: auto;
+      width: auto;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      -ms-border-radius:5px;
+      -o-border-radius:5px;
+      transition: background-color 0.5s;
+      -webkit-transition:  background-color 0.5s;
+      -moz-transition:  background-color 0.5s;
+      -ms-transition:  background-color 0.5s;
+      -o-transition:  background-color 0.5s;
+      color:var(--primary);
+      background-color:var(--white);
+      border: 1px solid var(--primary);
+}
+.wrapper .btn:hover{
+      color:var(--white);
+      background-color:var(--primary);
+    }
